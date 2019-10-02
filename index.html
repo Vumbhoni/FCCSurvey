@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+
+  <div class="offset-md-2 col-md-8 rounded" id="main">
+    <div id="container" class="col-md-12">
+      <div class="col-md-12" id="description-div">
+        <p id="description">Let Us Know How We Can Improve Our Services</p>
+      </div>
+  
+      <form id="survey-form" class="col-md-12">
+        <div class="row">
+          <div class="col-6 label">
+            <label for="name" id="name-label">*Name:</label>
+          </div>
+          <div class="col-4 offset-md-1 right-tab">
+            <input type="text" name="name" id="name"class="form-control" required placeholder="Enter your name" />
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-6 label">
+            <label for="email" id="email-label">*Email:</label>
+          </div>
+          
+          <div class="col-4 offset-md-1 right-tab">
+            <input name="email" id="email" class="form-control" type="email" required placeholder="Enter your email address" />
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-6 label">
+            <label for="number" id="number-label">Age:</label>
+          </div>
+          <div class="col-4 offset-md-1 right-tab">
+            <input type="number" id="number" class="form-control" min="1" max="120" placeholder="Enter your age" />
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-6 label">
+            <label for="dropdown">Best description to describe your current role: </label>
+            </div>
+          <div class="col-4 offset-md-1 right-tab">
+            <select id="dropdown" class="form-control">
+            <option value="1">Student</option>
+            <option value="2">Employed</option>
+            <option value="3">Unemployed</option>
+          </select>
+          </div>
+          
+        </div>
+  
+        <div class="row">
+          <div class="col-6 label">
+            <label for="moregroups">How likely are you to recommend our services: </label>
+          </div>
+          <div class="col-4 offset-md-1 right-tab">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="1" name="recommendation">Highly Likely
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="1" name="recommendation">Maybe
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="1" name="recommendation">Not Sure
+              </label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-6 label">
+            <label for="checkboxes">Things that could be improved in the future:</label>
+          </div>
+          <div class="col-4 offset-md-1 right-tab">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="checkboxes" value="1" disabled>Option 1
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="checkboxes" value="2" disabled>Option 2
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="checkboxes" value="3" disabled>Option 3
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="checkboxes" value="4" disabled>Option 4
+              </label>
+            </div>
+          </div>
+          
+        </div>
+  
+        <div class="row">
+          <div class="col-6 label">
+            <label for="comment">Any comments or suggestions:</label>
+          </div>
+          <div class="col-4 offset-md-1 right-tab">
+            <textarea id="comment" class="form-control" placeholder="Enter comment here..."></textarea>
+          </div>
+        </div>
+  
+        <div class="row" id="submit-div">
+          <input type="submit" id="submit" class="col-2 offset-md-5 form-control btn btn-primary" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
